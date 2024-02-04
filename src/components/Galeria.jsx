@@ -28,14 +28,14 @@ const Galeria = () => {
       };
 
   return (
-    <div>
+    <div className="ml-0 lg:ml-80">
         <motion.div
          
          variants={container}
          initial="hidden"
          animate="visible"
-        className="flex text-5xl container border-gray-950 border-2 rounded-xl">
-            <div>
+        className="flex md:flex-row flex-col text-5xl container border-gray-950 border-2 rounded-xl">
+            <div className="flex flex-row md:flex-col">
                 <motion.div className="text-orange-500 item m-5" variants={item}><IoLogoHtml5 /></motion.div>
                 <motion.div className="text-blue-300 item m-5" variants={item}><IoLogoCss3 /></motion.div>
                 <motion.div className="text-orange-500 item m-5" variants={item}><FaGitAlt /></motion.div>
@@ -43,7 +43,7 @@ const Galeria = () => {
                 <motion.div className="text-yellow-400 item m-5" variants={item}><IoLogoJavascript /></motion.div>
                 <motion.div className="text-green-500 item m-5" variants={item}><DiNodejs /></motion.div>
             </div>
-            <div>
+            <div className="flex flex-row md:flex-col">
                 
                 <motion.div className="text-blue-200 item m-5" variants={item}><FaReact /></motion.div>
                 <motion.div className="text-yellow-500 item m-5" variants={item}><SiVite /></motion.div>

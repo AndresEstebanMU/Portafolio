@@ -1,8 +1,13 @@
-import React from 'react'
+import ProjectsImages from "@/components/ProjectsImages"
+
+
+
 
 const pageProjects = () => {
   return (
-    <h1>Desde projects</h1>
+    <div className="mb-16 pt-0.5 mt-0.5 pb-10"  >
+      <ProjectsImages />
+    </div>
   )
 }
 

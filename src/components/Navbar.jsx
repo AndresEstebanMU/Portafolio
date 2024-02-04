@@ -36,17 +36,17 @@ const NavBar = () => {
           <Link href="/" className="font-bold text-inherit">Portafolio</Link>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="/about">
+          <Link color="foreground" href="/about" className="font-light">
             Acerca de mi
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/projects" aria-current="page" color="warning">
+          <Link href="/projects" className="font-light" >
             Proyectos
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/contact">
+          <Link color="foreground" href="/contact" className="font-light">
             Contacto
           </Link>
         </NavbarItem>
@@ -64,20 +64,38 @@ const NavBar = () => {
       </NavbarContent> */}
 
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+        {/* {menuItems.map((item, index) => ( */}
+        <NavbarMenuItem >
             <Link
               className="w-full"
-              color={
-                index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
-              href="#"
+              color="white"
+              href="/about"
               size="lg"
             >
-              {item}
+              Acerca de mí
             </Link>
           </NavbarMenuItem>
-        ))}
+          <NavbarMenuItem >
+            <Link
+              className="w-full"
+              color="white"
+              href="/projects"
+              size="lg"
+            >
+              Projects
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem >
+            <Link
+              className="w-full"
+              color="white"
+              href="/contact"
+              size="lg"
+            >
+              Contacto
+            </Link>
+          </NavbarMenuItem>
+        
       </NavbarMenu>
     </Navbar>
   )

@@ -7,7 +7,7 @@ import { TbDiamonds } from "react-icons/tb";
 
 const CardAbout = () => {
   return (
-    <div className='flex flex-row w-full h-screen justify-center items-center px-28 gap-5'>
+    <div className='flex flex-col w-full mb-20 justify-center items-center px-28 gap-5  lg:flex-row'>
       <motion.div
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: 1 }}
@@ -34,7 +34,7 @@ const CardAbout = () => {
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01]
       }}
-      className='m-48 text-xl text-center box'>
+      className='m-0 text-xl text-center box lg:m-48' >
 
           <p>¡Hola! Soy Andrés Muñoz, un apasionado desarrollador web fullstack con experiencia en la creación de soluciones digitales innovadoras. Mi enfoque abarca tanto el desarrollo del lado del cliente como del servidor, y me destaco por mi habilidad para crear aplicaciones web robustas y funcionales.</p>
           <p className='mt-10 text-left'>Habilidades Clave:</p><br />
