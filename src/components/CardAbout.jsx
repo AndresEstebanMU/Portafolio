@@ -7,7 +7,7 @@ import { TbDiamonds } from "react-icons/tb";
 
 const CardAbout = () => {
   return (
-    <div className='flex flex-col w-full mb-20 justify-center items-center px-28 gap-5  lg:flex-row'>
+    <div className='flex flex-col w-full mb-20 justify-center items-center px-28 gap-5  lg:flex-row  bg-black'>
       <motion.div
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: 1 }}
