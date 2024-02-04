@@ -5,6 +5,12 @@ import Image from 'next/image';
 
 
 const TextoHome = () => {
+    const handleDescargar = () => {
+        const url = '/CURRICULUM VITAE Andrés.doc'; // Ruta al archivo en el directorio public
+        window.open(url);
+      };
+    
+
     return (
         <motion.div
         className='box p-10 mr-0 lg:mr-80'
@@ -25,7 +31,7 @@ const TextoHome = () => {
                 className='rounded-full'
                 />
                 <p className=''>"Recién graduado con entusiasmo de un bootcamp, ofrezco una combinación única de habilidades frescas y una pasión innata por el desarrollo web. Mi enfoque va más allá de las líneas de código; aspira a transformar ideas en experiencias digitales impactantes. Con un compromiso inquebrantable y una mentalidad de aprendizaje continuo, estoy listo para aportar creatividad y soluciones tecnológicas de vanguardia a su equipo. Descubra cómo mi reciente formación y mi dedicación pueden impulsar la innovación en su organización."</p>
-                <button className="p-5 bg-red-600 rounded-xl hover:bg-red-700 transition-all w-full xl:w-1/2">Descargar CV</button>
+                <button onClick={handleDescargar} className="p-5 bg-red-600 rounded-xl hover:bg-red-700 transition-all w-full xl:w-1/2">Descargar CV</button>
             </div>
         </motion.div>
     )

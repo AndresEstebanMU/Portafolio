@@ -22,48 +22,21 @@ Mi nombre es Andrés Muñoz y este es el código usado en la creación del porta
 
 ## Página
 
-#### Visualización del landing page:
-![Alt text](./public/img/para%20el%20readme/hom.png)  
-![Alt text](./public/img/para%20el%20readme/contenido.png)
-![Alt text](./public/img/para%20el%20readme/footer.png)  
-  
-
-#### Navbar:
-![Alt text](./public/img/para%20el%20readme/navbar.png)
-Gracias a react podemos navegar por las distintas páginas del nav sin que la página se actualice y pintando solo lo necesario.
-
-
-#### Menú:
-![Alt text](./public/img/para%20el%20readme/menu.png)
-Nuestro menú contiene informacion tomada desde firestore y puede ser añadida desde la pestaña administrador.
-![Alt text](./public/img/para%20el%20readme/admin.png)
-
-
-
-#### Reserva:
-![Alt text](./public/img/para%20el%20readme/reserva.png)
-Agrega los datos ingresados en una tabla para posteriormente poder ser revisados.
+La página cuenta con 4 secciones, el front page, que es el "home" de la página con la informacion principal y los links a otras vistas. La sección "Acerca de mí" con información personal y laboral. La parte de "Proyectos con links directos a proyectos realizados con anterioridad y la parte de "Contacto" que contiene información personal publica para cualquiera que la requiera.
 
 
 
 
-
-
-## Créditos
-
-Este proyecto es creado con fines academicos y no pretende lucrar con el contendio de su página de ninguna manera. En general, imágenes obtenidas de google.
 
 ---
 
-Proyecto Realizado por Andrés Muñoz y Pablo Oyola con fines académicos.  
-https://github.com/AndresEstebanMU/Pagina-Restaurante  
-https://github.com/poyola1976/Proyecto4-Restaurant
+Proyecto Realizado por Andrés Muñoz con fines académicos.  
+
 
 ## Contacto
 
 andresestebanmu@gmail.com  
-poyola@gmail.com
+
 
 ## Deploy
 
-https://master--voluble-boba-d82bef.netlify.app/
