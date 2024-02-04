@@ -1,8 +1,14 @@
-import React from 'react'
+import ContactM from "@/components/ContactM"
+
+
+
 
 const pageContacto = () => {
   return (
-    <div>Desde contacto</div>
+    <div>
+      
+      <ContactM />
+    </div>
   )
 }
 
