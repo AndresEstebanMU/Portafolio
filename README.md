@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Portafolio 
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Mi nombre es Andrés Muñoz y este es el código usado en la creación del portafolio.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **ÍNDICE**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* [Tecnologías Utilizadas](#tecnologías-utilizadas)
+* [Página](#página)
+* [Créditos](#créditos)
+* [Contacto](#contacto)
+* [Deploy](#deploy)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tecnologías Utilizadas
 
-## Learn More
+- HTML
+- CSS
+- React
+- Next.js
+- Tailwind
 
-To learn more about Next.js, take a look at the following resources:
+## Página
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Visualización del landing page:
+![Alt text](./public/img/para%20el%20readme/hom.png)  
+![Alt text](./public/img/para%20el%20readme/contenido.png)
+![Alt text](./public/img/para%20el%20readme/footer.png)  
+  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Navbar:
+![Alt text](./public/img/para%20el%20readme/navbar.png)
+Gracias a react podemos navegar por las distintas páginas del nav sin que la página se actualice y pintando solo lo necesario.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Menú:
+![Alt text](./public/img/para%20el%20readme/menu.png)
+Nuestro menú contiene informacion tomada desde firestore y puede ser añadida desde la pestaña administrador.
+![Alt text](./public/img/para%20el%20readme/admin.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+#### Reserva:
+![Alt text](./public/img/para%20el%20readme/reserva.png)
+Agrega los datos ingresados en una tabla para posteriormente poder ser revisados.
+
+
+
+
+
+
+## Créditos
+
+Este proyecto es creado con fines academicos y no pretende lucrar con el contendio de su página de ninguna manera. En general, imágenes obtenidas de google.
+
+---
+
+Proyecto Realizado por Andrés Muñoz y Pablo Oyola con fines académicos.  
+https://github.com/AndresEstebanMU/Pagina-Restaurante  
+https://github.com/poyola1976/Proyecto4-Restaurant
+
+## Contacto
+
+andresestebanmu@gmail.com  
+poyola@gmail.com
+
+## Deploy
+
+https://master--voluble-boba-d82bef.netlify.app/

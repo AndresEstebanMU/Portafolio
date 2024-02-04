@@ -33,10 +33,10 @@ const NavBar = () => {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
           {/* <AcmeLogo /> */}
-          <Link href="/" className="font-bold text-inherit">Portafolio</Link>
+          <Link href="/" className="font-bold text-inherit ">Portafolio</Link>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="/about" className="font-light">
+          <Link color="foreground" href="/about" className="font-light ml-10">
             Acerca de mi
           </Link>
         </NavbarItem>
