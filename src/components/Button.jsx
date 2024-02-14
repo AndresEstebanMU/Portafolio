@@ -17,7 +17,7 @@
 
 const Descargar = () => {
   const handleDescargar = () => {
-    const url = '/CURRICULUM VITAE Andrés.doc'; // Ruta al archivo en el directorio public
+    const url = '/CURRICULUM VITAE ANDRÉS-2.pdf'; // Ruta al archivo en el directorio public
     window.open(url);
   };
 
