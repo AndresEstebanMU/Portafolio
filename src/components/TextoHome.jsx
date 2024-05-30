@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const TextoHome = () => {
     const handleDescargar = () => {
-        const url = '/CURRICULUM VITAE ANDRÉS-2.pdf'; // Ruta al archivo en el directorio public
+        const url = '/Curriculum-Andrés-Muñoz'; // Ruta al archivo en el directorio public
         window.open(url);
       };
     
@@ -30,7 +30,7 @@ const TextoHome = () => {
                 height={50}
                 className='rounded-full'
                 />
-                <p>Recién graduado con entusiasmo de un bootcamp, ofrezco una combinación única de habilidades frescas y una pasión innata por el desarrollo web. Mi enfoque va más allá de las líneas de código; aspira a transformar ideas en experiencias digitales impactantes. Con un compromiso inquebrantable y una mentalidad de aprendizaje continuo, estoy listo para aportar creatividad y soluciones tecnológicas de vanguardia a su equipo. Descubra cómo mi reciente formación y mi dedicación pueden impulsar la innovación en su organización.</p>
+                <p>Ofrezco una combinación única de habilidades frescas y una pasión innata por el desarrollo web. Mi enfoque va más allá de las líneas de código, aspira a transformar ideas en experiencias digitales impactantes. Con un compromiso inquebrantable y una mentalidad de aprendizaje continuo, estoy listo para aportar creatividad y soluciones tecnológicas de vanguardia a su equipo. Descubra cómo mi formación y dedicación pueden impulsar la innovación en su proyecto.</p>
                 <button onClick={ handleDescargar } className="p-5 bg-red-600 rounded-xl hover:bg-red-700 transition-all w-full xl:w-1/2">Descargar CV</button>
             </div>
         </motion.div>
