@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const TextoHome = () => {
     const handleDescargar = () => {
-        const url = '/Curriculum-Andrés-Muñoz'; // Ruta al archivo en el directorio public
+        const url = '/Curriculum-Andrés-Muñoz.pdf'; // Ruta al archivo en el directorio public
         window.open(url);
       };
     
