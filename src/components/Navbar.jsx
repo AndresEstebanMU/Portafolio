@@ -18,7 +18,7 @@ const NavBar = () => {
 
 
   return (
-    <Navbar disableAnimation isBordered className="bg-red-600">
+    <Navbar disableAnimation isBordered className="bg-red-600 ">
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
       </NavbarContent>

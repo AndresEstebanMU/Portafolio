@@ -13,7 +13,7 @@ const TextoHome = () => {
 
     return (
         <motion.div
-        className='box p-10 mr-0 lg:mr-80'
+        className='box p-10 mr-0 lg:mr-80 '
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
