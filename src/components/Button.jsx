@@ -15,18 +15,18 @@
 // export default Button
 
 
-const Descargar = () => {
-  const handleDescargar = () => {
-    const url = '/CURRICULUM-VITAE-ANDRÉS.odt'; // Ruta al archivo en el directorio public
-    window.open(url);
-  };
+// const Descargar = () => {
+//   const handleDescargar = () => {
+//     const url = '../../public/Curriculum-2025.pdf'; // Ruta al archivo en el directorio public
+//     window.open(url);
+//   };
 
-  return (
-    <div>
+//   return (
+//     <div>
       
-      <button onClick={handleDescargar}>Descargar CV</button>
-    </div>
-  );
-};
+//       <button onClick={handleDescargar}>Descargar CV</button>
+//     </div>
+//   );
+// };
 
-export default Descargar;
+// export default Descargar;
