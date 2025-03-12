@@ -14,16 +14,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className} >
+      <body className={`${inter.className}`} >
        
-          <Providers>
+          <Providers className="min-h-dvh grid grid-rows-[auto_1fr_auto]">
             <NavBar />
           
             {children}
+            <Footer />
           </Providers>
           {/*chiledren es la página en si, es el body */}
 
-          <Footer />
+          
 
         
       </body>

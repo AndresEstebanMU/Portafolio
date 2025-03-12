@@ -22,7 +22,7 @@ const TextoHome = () => {
           ease: [0, 0.71, 0.2, 1.01]
         }}
         >
-            <div className="flex flex-col gap-5 items-center  text-center text-xl ">
+            <div className="flex flex-col gap-5 items-center  text-center text-xl text-white">
                 <Image
                 src="/Imagen de perfil.jpg"
                 alt="llaves"
