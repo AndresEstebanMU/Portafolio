@@ -28,13 +28,13 @@ const Galeria = () => {
       };
 
   return (
-    <div className="ml-0 lg:ml-80">
+    <div className="ml-0 lg:ml-80 ">
         <motion.div
          
          variants={container}
          initial="hidden"
          animate="visible"
-        className="flex md:flex-row flex-col text-5xl container border-gray-950 border-2 rounded-xl">
+        className="flex md:flex-row flex-col text-4xl container border-gray-950 border-2 rounded-xl ">
             <div className="flex flex-row md:flex-col">
                 <motion.div className="text-orange-500 item m-5" variants={item}><IoLogoHtml5 /></motion.div>
                 <motion.div className="text-blue-300 item m-5" variants={item}><IoLogoCss3 /></motion.div>
