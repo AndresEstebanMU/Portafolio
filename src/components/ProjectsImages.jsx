@@ -4,24 +4,9 @@ import Image from 'next/image';
 
 const ProjectsImages = () => {
     return (
-        <div>
+        <div className='flex justify-around items-center @md:flex-col'>
             <motion.div 
-            className='flex justify-center items-center mt-9  gap-5'
-            whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}
-            >
-                <a href='https://roaring-tulumba-ba31a3.netlify.app/'>
-                <Image
-                    className='rounded-xl'
-                    src="/botika.png"
-                    alt="pagina la botika"
-                    width={410}
-                    height={410}
-                    
-                />   
-                </a>
-            </motion.div>
-            <motion.div 
-            className='flex justify-center items-center mt-10 gap-5'
+            className='flex flex-col justify-center items-center mt-10 gap-5'
             whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}
             >
                 <a href='https://master--voluble-boba-d82bef.netlify.app/'>
@@ -34,9 +19,10 @@ const ProjectsImages = () => {
                     
                 />  
                 </a>
+                <p>Proyecto Restaurant</p>
             </motion.div>
             <motion.div 
-            className='flex justify-center items-center mt-10 gap-5'
+            className='flex flex-col justify-center items-center mt-10 gap-5'
             whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}
             >
               <a href='https://andresestebanmu.github.io/Proyecto3-Grafico/'>
@@ -49,6 +35,23 @@ const ProjectsImages = () => {
                     
                 />  
                 </a>
+                <p>Gráfico en base a API</p>
+            </motion.div>
+            <motion.div 
+            className='flex flex-col justify-center items-center mt-9  gap-5'
+            whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}
+            >
+                <a href='https://roaring-tulumba-ba31a3.netlify.app/'>
+                <Image
+                    className='rounded-xl'
+                    src="/botika.png"
+                    alt="pagina la botika"
+                    width={410}
+                    height={410}
+                    
+                />   
+                </a>
+                <p>E-Commerce (En Reparación)</p>
             </motion.div>
         </div>
     )
