@@ -36,21 +36,21 @@ const Galeria = () => {
          animate="visible"
         className="flex md:flex-row flex-col text-4xl container border-gray-950 border-2 rounded-xl ">
             <div className="flex flex-row md:flex-col">
-                <motion.div className="text-orange-500 item m-5" variants={item}><IoLogoHtml5 /></motion.div>
-                <motion.div className="text-blue-300 item m-5" variants={item}><IoLogoCss3 /></motion.div>
-                <motion.div className="text-orange-500 item m-5" variants={item}><FaGitAlt /></motion.div>
-                <motion.div className="text-white  item m-5" variants={item}><IoLogoGithub /></motion.div>
-                <motion.div className="text-yellow-400 item m-5" variants={item}><IoLogoJavascript /></motion.div>
-                <motion.div className="text-green-500 item m-5" variants={item}><DiNodejs /></motion.div>
+                <motion.div className="text-orange-500 item m-1 md:m-5" variants={item}><IoLogoHtml5 /></motion.div>
+                <motion.div className="text-blue-300 item m-1 md:m-5" variants={item}><IoLogoCss3 /></motion.div>
+                <motion.div className="text-orange-500 item m-1 md:m-5" variants={item}><FaGitAlt /></motion.div>
+                <motion.div className="text-white  item m-1 md:m-5" variants={item}><IoLogoGithub /></motion.div>
+                <motion.div className="text-yellow-400 item m-1 md:m-5" variants={item}><IoLogoJavascript /></motion.div>
+                <motion.div className="text-green-500 item m-1 md:m-5" variants={item}><DiNodejs /></motion.div>
             </div>
             <div className="flex flex-row md:flex-col">
                 
-                <motion.div className="text-blue-200 item m-5" variants={item}><FaReact /></motion.div>
-                <motion.div className="text-yellow-500 item m-5" variants={item}><SiVite /></motion.div>
-                <motion.div className="text-white item m-5" variants={item}><SiNextdotjs /></motion.div>
-                <motion.div className="text-blue-200  item m-5" variants={item}><SiTailwindcss /></motion.div>
-                <motion.div className="text-xs flex items-end item m-5" variants={item}>Express <FaJsSquare className="text-yellow-400" /></motion.div>
-                <motion.div className="text-green-500 item m-5" variants={item}><SiMongodb /></motion.div>
+                <motion.div className="text-blue-200 item m-1 md:m-5" variants={item}><FaReact /></motion.div>
+                <motion.div className="text-yellow-500 item m-1 md:m-5" variants={item}><SiVite /></motion.div>
+                <motion.div className="text-white item m-1 md:m-5" variants={item}><SiNextdotjs /></motion.div>
+                <motion.div className="text-blue-200  item m-1 md:m-5" variants={item}><SiTailwindcss /></motion.div>
+                <motion.div className="text-xs flex items-end item m-1 md:m-5" variants={item}>Express <FaJsSquare className="text-yellow-400" /></motion.div>
+                <motion.div className="text-green-500 item m-1 md:m-5" variants={item}><SiMongodb /></motion.div>
             </div>
         </motion.div>
     </div>
