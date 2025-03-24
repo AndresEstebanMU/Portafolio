@@ -34,7 +34,7 @@ const CardAbout = () => {
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01]
       }}
-      className='m-0 text-xl text-center box lg:m-48 text-white' >
+      className='m-0 text-16 md:text-xl text-center box lg:m-48 text-white' >
 
           <p>¡Hola! Soy Andrés Muñoz, un apasionado desarrollador web fullstack con experiencia en la creación de soluciones digitales innovadoras. Mi enfoque abarca tanto el desarrollo del lado del cliente como del servidor, y me destaco por mi habilidad para crear aplicaciones web robustas y funcionales.</p>
           <p className='mt-10 text-left'>Habilidades Clave:</p><br />
