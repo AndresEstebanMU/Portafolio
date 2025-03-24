@@ -65,7 +65,17 @@ const NavBar = () => {
 
       <NavbarMenu>
         {/* {menuItems.map((item, index) => ( */}
-        <NavbarMenuItem >
+          <NavbarMenuItem >
+            <Link
+              className="w-full"
+              color="white"
+              href="/"
+              size="lg"
+            >
+              Home
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem >
             <Link
               className="w-full"
               color="white"
