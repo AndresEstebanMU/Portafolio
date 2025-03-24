@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} grid grid-rows-[auto_1fr_auto] min-h-dvh`} >
+      <body className={`${inter.className} grid grid-rows-[auto_1fr_auto] min-h-dvh overflow-auto`} >
        
           <Providers >
             <NavBar />
