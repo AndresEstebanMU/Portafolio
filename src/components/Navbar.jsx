@@ -10,6 +10,7 @@ const NavBar = () => {
 
   
   const menuItems = [
+    "Home",
     "Acerca de mí",
     "Proyectos",
     "Contacto",
@@ -26,7 +27,7 @@ const NavBar = () => {
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
           {/* <AcmeLogo /> */}
-          <p className="font-bold text-inherit">Portafolio</p>
+          <p href="/" className="font-bold text-inherit">Portafolio</p>
         </NavbarBrand>
       </NavbarContent>
 
