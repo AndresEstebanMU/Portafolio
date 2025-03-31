@@ -17,9 +17,8 @@ const NavBar = () => {
   ];
 
 
-
   return (
-    <Navbar disableAnimation isBordered className="bg-red-600 static">
+    <Navbar isBordered className="bg-red-800 static">
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
       </NavbarContent>
@@ -64,7 +63,7 @@ const NavBar = () => {
         </NavbarItem>
       </NavbarContent> */}
 
-      <NavbarMenu>
+      <NavbarMenu className="w-fit" >
         {/* {menuItems.map((item, index) => ( */}
           <NavbarMenuItem >
             <Link
