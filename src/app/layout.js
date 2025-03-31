@@ -1,10 +1,13 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
+import { Economica } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+
+
+const generalFont = Economica({ weight:'400', subsets: ['latin'] });
+
 
 export const metadata = {
   title: "Portafolio Desarrollo Web Fullstack | Andrés Muñoz",
@@ -13,8 +16,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} grid grid-rows-[auto_1fr_auto] min-h-dvh overflow-auto`} >
+    <html lang="en" >
+      <body className={`${generalFont.className} grid grid-rows-[auto_1fr_auto] min-h-dvh overflow-auto`} >
        
           <Providers >
             <NavBar />
