@@ -35,16 +35,17 @@ const NavBar = () => {
           {/* <AcmeLogo /> */}
           <Link href="/" className="font-bold text-inherit ">Portafolio</Link>
         </NavbarBrand>
-        <NavbarItem>
-          <Link color="foreground" href="/about" className="font-light ml-10">
-            Acerca de mi
-          </Link>
-        </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/projects" className="font-light" >
+          <Link href="/projects" className="font-light ml-10" >
             Proyectos
           </Link>
         </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/about" className="font-light ">
+            Acerca de mi
+          </Link>
+        </NavbarItem>
+       
         <NavbarItem>
           <Link color="foreground" href="/contact" className="font-light">
             Contacto
@@ -75,16 +76,7 @@ const NavBar = () => {
               Home
             </Link>
           </NavbarMenuItem>
-          <NavbarMenuItem >
-            <Link
-              className="w-full"
-              color="white"
-              href="/about"
-              size="lg"
-            >
-              Acerca de mí
-            </Link>
-          </NavbarMenuItem>
+
           <NavbarMenuItem >
             <Link
               className="w-full"
@@ -95,6 +87,18 @@ const NavBar = () => {
               Projects
             </Link>
           </NavbarMenuItem>
+
+          <NavbarMenuItem >
+            <Link
+              className="w-full"
+              color="white"
+              href="/about"
+              size="lg"
+            >
+              Acerca de mí
+            </Link>
+          </NavbarMenuItem>
+          
           <NavbarMenuItem >
             <Link
               className="w-full"
