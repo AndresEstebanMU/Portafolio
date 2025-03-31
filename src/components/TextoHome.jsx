@@ -13,7 +13,7 @@ const TextoHome = () => {
 
     return (
         <motion.div
-        className='box p-10 mr-0 lg:mr-80 '
+        className='box p-5 mr-0 lg:mr-80 '
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -24,9 +24,9 @@ const TextoHome = () => {
         >
             <div className="flex flex-col gap-5 items-center  text-center text-16 md:text-xl text-white">
                 <Image
-                src="/Imagen de perfil.jpg"
+                src="/IMG_20241023_172352.jpg"
                 alt="llaves"
-                width={50}
+                width={100}
                 height={50}
                 className='rounded-full'
                 />
