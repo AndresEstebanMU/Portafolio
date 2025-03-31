@@ -4,7 +4,13 @@
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenuItem, NavbarMenuToggle, NavbarMenu} from "@nextui-org/react";
 import Link from "next/link";
 // import {AcmeLogo} from "./AcmeLogo.jsx";
-import React from 'react'
+import React from 'react';
+import { Bebas_Neue } from 'next/font/google';
+
+
+const bebas = Bebas_Neue({  weight: '400', subsets: ['latin'] });
+
+// agregar classname
 
 const NavBar = () => {
 
@@ -16,38 +22,40 @@ const NavBar = () => {
     "Contacto",
   ];
 
+  
+
 
   return (
-    <Navbar isBordered className="bg-red-800 static">
+    <Navbar isBordered className="bg-red-900 static" >
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
-        <NavbarBrand>
+        <NavbarBrand className={bebas.className}>
           {/* <AcmeLogo /> */}
-          <p href="/" className="font-bold text-inherit">Portafolio</p>
+          <p href="/" className="font-bold text-2xl bebas.className">Portafolio</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarBrand>
+        <NavbarBrand className={bebas.className}>
           {/* <AcmeLogo /> */}
-          <Link href="/" className="font-bold text-inherit ">Portafolio</Link>
+          <Link href="/" className=" text-3xl font-black">Portafolio</Link>
         </NavbarBrand>
-        <NavbarItem isActive>
-          <Link href="/projects" className="font-light ml-10" >
+        <NavbarItem isActive className={bebas.className}>
+          <Link href="/projects" className=" ml-60 text-2xl" >
             Proyectos
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="/about" className="font-light ">
+        <NavbarItem isActive className={bebas.className}>
+          <Link color="foreground" href="/about" className="text-2xl" >
             Acerca de mi
           </Link>
         </NavbarItem>
        
-        <NavbarItem>
-          <Link color="foreground" href="/contact" className="font-light">
+        <NavbarItem isActive className={bebas.className}>
+          <Link color="foreground" href="/contact" className="text-2xl">
             Contacto
           </Link>
         </NavbarItem>
@@ -66,9 +74,9 @@ const NavBar = () => {
 
       <NavbarMenu className="w-fit" >
         {/* {menuItems.map((item, index) => ( */}
-          <NavbarMenuItem >
+          <NavbarMenuItem className={bebas.className}>
             <Link
-              className="w-full"
+              className="w-full text-xl"
               color="white"
               href="/"
               size="lg"
@@ -77,9 +85,9 @@ const NavBar = () => {
             </Link>
           </NavbarMenuItem>
 
-          <NavbarMenuItem >
+          <NavbarMenuItem className={bebas.className}>
             <Link
-              className="w-full"
+              className="w-full text-xl"
               color="white"
               href="/projects"
               size="lg"
@@ -88,9 +96,9 @@ const NavBar = () => {
             </Link>
           </NavbarMenuItem>
 
-          <NavbarMenuItem >
+          <NavbarMenuItem className={bebas.className}>
             <Link
-              className="w-full"
+              className="w-full text-xl"
               color="white"
               href="/about"
               size="lg"
@@ -99,9 +107,9 @@ const NavBar = () => {
             </Link>
           </NavbarMenuItem>
           
-          <NavbarMenuItem >
+          <NavbarMenuItem className={bebas.className}>
             <Link
-              className="w-full"
+              className="w-full text-xl"
               color="white"
               href="/contact"
               size="lg"
