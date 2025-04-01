@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const ProjectsImages = () => {
     return (
-        <div className='flex md:justify-around md:items-start flex-col md:flex-row items-center'>
+        <div className='flex md:justify-around md:items-start flex-col md:flex-row items-center md:text-2xl text-xl'>
             <motion.div 
             className='flex flex-col justify-center items-center mt-10 gap-5 md:w-1/3 w-3/4'
             whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}
