@@ -92,7 +92,7 @@ const NavBar = () => {
               href="/projects"
               size="lg"
             >
-              Projects
+              Projectos
             </Link>
           </NavbarMenuItem>
 
