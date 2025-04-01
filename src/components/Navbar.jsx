@@ -44,7 +44,7 @@ const NavBar = () => {
           <Link href="/" className=" text-3xl font-black">Portafolio</Link>
         </NavbarBrand>
         <NavbarItem isActive className={bebas.className}>
-          <Link href="/projects" className=" md:ml-40 sm:ml-30 text-2xl" >
+          <Link href="/projects" className="lg:ml-60 md:ml-40 sm:ml-30 text-2xl" >
             Proyectos
           </Link>
         </NavbarItem>
