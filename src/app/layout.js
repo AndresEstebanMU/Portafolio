@@ -24,8 +24,9 @@ export default function RootLayout({ children }) {
           
             {children}
             
+            <Footer />
           </Providers>
-          <Footer />
+          
           {/*chiledren es la página en si, es el body */}
 
           
