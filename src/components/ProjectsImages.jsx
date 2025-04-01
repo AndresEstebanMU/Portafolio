@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 const ProjectsImages = () => {
     return (
-        <div className='flex md:justify-around md:items-start flex-col md:flex-row items-center md:text-2xl text-xl'>
+        <div className='flex md:justify-around md:items-start flex-col md:flex-row items-center md:text-2xl text-xl overflow-hidden '>
             <motion.div 
-            className='flex flex-col justify-center items-center mt-10 gap-5 md:w-1/3 w-3/4'
+            className='flex flex-col justify-center items-center mt-10 gap-5 md:w-1/3 w-3/4 '
             whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}
             >
                 <a href='https://master--voluble-boba-d82bef.netlify.app/'>
@@ -25,7 +25,7 @@ const ProjectsImages = () => {
             </motion.div>
             
             <motion.div 
-            className='flex flex-col justify-center items-center mt-10 gap-5 md:w-1/3 w-3/4'
+            className='flex flex-col justify-center items-center mt-10 gap-5 md:w-1/3 w-3/4 mb-10 '
             whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}
             >
               <a href='https://andresestebanmu.github.io/Proyecto3-Grafico/'>
@@ -42,7 +42,7 @@ const ProjectsImages = () => {
                 <p className='md:w-3/4 w-fit'> Proyecto de visualización de gráficos de películas y series en emisión, utilizando la API de The Movie Database (TMDb). Las calificaciones de cada obra corresponden al promedio de puntuaciones otorgadas por los espectadores.</p>
             </motion.div>
             <motion.div 
-            className='flex flex-col justify-center items-center mt-10  gap-5 md:w-1/3 w-3/4'
+            className='flex flex-col justify-center items-center mt-10  gap-5 md:w-1/3 w-3/4 '
             whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}
             >
                 <a href='https://roaring-tulumba-ba31a3.netlify.app/'>
