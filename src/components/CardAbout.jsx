@@ -38,17 +38,17 @@ const CardAbout = () => {
 
           <p>¡Hola! Soy Andrés Muñoz, desarrollador web fullstack con experiencia en la creación de soluciones digitales. Mi enfoque abarca tanto el desarrollo del lado del cliente como del servidor, y siempre busco crear aplicaciones web robustas y funcionales.</p>
           <p className='mt-6 md:mt-10 text-left'>Habilidades Clave:</p><br />
-          <div className='flex flex-row text-left'>
-            <TbDiamonds className='mr-5 mt-1' />
-            <span >Desarrollo web fullstack con conocimientos en HTML5, CSS5, Git y GitHub colaborativo,<br /> JavaScript, NodeJS, React JS, Vite, Next.js, Tailwind CSS, Express JS, MongoDB y Firebase.</span>
+          <div className='flex flex-row text-left '>
+            <TbDiamonds className=' max-w-8 min-w-8' />
+            <span className='ml-2 '>Desarrollo web fullstack con conocimientos en HTML5, CSS5, Git y GitHub colaborativo, JavaScript, NodeJS, React JS, Vite, Next.js, Tailwind CSS, Express JS, MongoDB y Firebase.</span>
           </div>
-          <div className='flex flex-row mt-3'>
-            <TbDiamonds className='mr-5 mt-1' />
-            <span> Implementación de soluciones escalables.</span>
+          <div className='flex flex-row mt-3  text-left'>
+            <TbDiamonds className='max-w-8 min-w-8' />
+            <span className='ml-2 '> Implementación de soluciones escalables.</span>
           </div>
-          <div className='flex flex-row mt-3'>
-            <TbDiamonds className='mr-5 mt-1' />
-            <span>Disfruto trabajar en equipo, aportando siempre una actitud colaborativa y proactiva. Priorizo una comunicación efectiva y asertiva para facilitar el trabajo conjunto y alcanzar los objetivos comunes..</span>
+          <div className='flex flex-row mt-3 text-left '>
+            <TbDiamonds className='max-w-8 min-w-8' />
+            <span className='ml-2 '>Disfruto trabajar en equipo, aportando siempre una actitud colaborativa y proactiva. Priorizo una comunicación efectiva y asertiva para facilitar el trabajo conjunto y alcanzar los objetivos comunes.</span>
           </div>
           {/* <div className=' w-full flex gap-5 justify-center p-10 '>
           <p>Todos mis proyectos y contribuciones están disponibles en mi perfil de GitHub:</p>
