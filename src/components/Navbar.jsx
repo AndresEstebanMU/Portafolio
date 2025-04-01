@@ -15,12 +15,12 @@ const bebas = Bebas_Neue({  weight: '400', subsets: ['latin'] });
 const NavBar = () => {
 
   
-  const menuItems = [
+  /*const menuItems = [
     "Home",
     "Acerca de mí",
     "Proyectos",
     "Contacto",
-  ];
+  ];*/
 
   
 
@@ -34,17 +34,17 @@ const NavBar = () => {
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand className={bebas.className}>
           {/* <AcmeLogo /> */}
-          <p href="/" className="font-bold text-2xl bebas.className">Portafolio</p>
+          <p href="/" className="font-bold text-2xl">Portafolio</p>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarBrand className={bebas.className}>
+      <NavbarContent className="hidden sm:flex gap-4 md:pr-8 sm:pr-2" justify="end">
+        <NavbarBrand className={`${bebas.className} flex justify-center md:pr-16 sm:pr-2`}>
           {/* <AcmeLogo /> */}
           <Link href="/" className=" text-3xl font-black">Portafolio</Link>
         </NavbarBrand>
         <NavbarItem isActive className={bebas.className}>
-          <Link href="/projects" className=" ml-60 text-2xl" >
+          <Link href="/projects" className=" md:ml-60 sm:ml-30 text-2xl" >
             Proyectos
           </Link>
         </NavbarItem>
