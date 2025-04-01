@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-      <body className={`${generalFont.className} grid grid-rows-[auto_1fr_auto] min-h-svh overflow-auto w-fit`} >
+      <body className={`${generalFont.className} grid grid-rows-[auto_1fr_auto] min-h-svh overflow-auto`} >
        
           <Providers >
             <NavBar />

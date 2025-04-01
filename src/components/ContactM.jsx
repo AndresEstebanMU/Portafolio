@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const ContactM = () => {
   return (
-    <div>
+    <div className="lg:w-full">
         <motion.div
          
          initial={{ opacity: 0, scale: 0.5 }}
@@ -14,7 +14,7 @@ const ContactM = () => {
            delay: 0.5,
            ease: [0, 0.71, 0.2, 1.01]
          }}
-         className='box w-full flex flex-col gap-5 justify-center pt-20 mt-1 mb-72 pb-16 items-center  text-16 md:text-3xl p-4 bg-black text-white'>
+         className='box lw-full flex flex-col gap-5 justify-center pt-20 mt-1 mb-72 pb-16 items-center  text-16 md:text-3xl p-4 bg-black text-white'>
           <p>Todos mis proyectos y contribuciones están disponibles en mi perfil de GitHub:</p>
           <a href="https://github.com/AndresEstebanMU"><FaGithub fontSize={50} /></a>
           <p>Si necesitas mas información sobre mi perfil profesional puedes visitar mi LinkedIn:</p>
