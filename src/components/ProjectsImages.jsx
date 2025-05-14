@@ -55,7 +55,7 @@ const ProjectsImages = () => {
                     
                 />   
                 </a>
-                <p>E-Commerce (En Reparación)</p>
+                <p>E-Commerce</p>
                 <p className='md:w-3/4 w-fit'>Proyecto de simulación de una tienda online de bebidas de todo tipo. La plataforma ofrece funciones como registro de usuarios, navegación intuitiva por el catálogo de productos, carrito de compras y un proceso de checkout seguro con pasarela de pagos.</p>
             </motion.div>
         </div>
