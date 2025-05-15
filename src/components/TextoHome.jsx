@@ -14,7 +14,7 @@ const TextoHome = () => {
   
     return (
         <motion.div
-        className='box p-5 mr-0 xl:mr-80 lg:mr-60 md:mr-20 '
+        className='box p-5 mr-0 2xl:mr-80 xl:mr-52 lg:mr-0 md:mr-10 '
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -23,13 +23,15 @@ const TextoHome = () => {
           ease: [0, 0.71, 0.2, 1.01]
         }}
         >
-            <div className="flex flex-col gap-5 items-center  text-center text-xl md:text-3xl  text-white">
+            <div className="flex flex-col gap-5 items-center  text-center text-xl md:text-3xl  text-white ">
                 <Image
                 src="/IMG_20241023_172352.jpg"
-                alt="llaves"
+                alt="Mi imagen"
                 width={100}
-                height={50}
-                className='rounded-full'
+                className='rounded-full w-auto h-auto'
+                height={0}
+                
+                priority={true}
                 />
                 {/* <p>Ofrezco una combinación única de habilidades frescas y una pasión innata por el desarrollo web. Mi enfoque va más allá de las líneas de código, aspira a transformar ideas en experiencias digitales impactantes. Con un compromiso inquebrantable y una mentalidad de aprendizaje continuo, estoy listo para aportar creatividad y soluciones tecnológicas de vanguardia a su equipo. Descubra cómo mi formación y dedicación pueden impulsar la innovación en su proyecto.</p> */}
                 <p>En la programación, finalmente encontré una plataforma creativa que se alinea con mis habilidades, despertando en mí una inmensa curiosidad por seguir avanzando y descubrir hasta dónde puede llevarme este camino. <br />

@@ -1,4 +1,4 @@
-'use client'
+/* 'use client'
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 
@@ -29,4 +29,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Login */
