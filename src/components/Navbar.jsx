@@ -34,7 +34,7 @@ const NavBar = () => {
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand className={bebas.className}>
           {/* <AcmeLogo /> */}
-          <p href="/" className="font-bold text-2xl">Portafolio</p>
+          <Link href="/" className="font-bold text-2xl">Portafolio</Link>
         </NavbarBrand>
       </NavbarContent>
 

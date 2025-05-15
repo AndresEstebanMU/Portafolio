@@ -36,7 +36,7 @@ const TextoHome = () => {
                 {/* <p>Ofrezco una combinación única de habilidades frescas y una pasión innata por el desarrollo web. Mi enfoque va más allá de las líneas de código, aspira a transformar ideas en experiencias digitales impactantes. Con un compromiso inquebrantable y una mentalidad de aprendizaje continuo, estoy listo para aportar creatividad y soluciones tecnológicas de vanguardia a su equipo. Descubra cómo mi formación y dedicación pueden impulsar la innovación en su proyecto.</p> */}
                 <p>En la programación, finalmente encontré una plataforma creativa que se alinea con mis habilidades, despertando en mí una inmensa curiosidad por seguir avanzando y descubrir hasta dónde puede llevarme este camino. <br />
                 Conoce más sobre mí.</p>
-                <button onClick={ handleDescargar } className="p-5 bg-red-900 rounded-xl hover:bg-red-800 transition-all w-full xl:w-1/2">Descargar CV</button>
+                <button onClick={ handleDescargar } className="p-5 bg-red-900 rounded-xl hover:bg-red-800 transition-all w-3/4 xl:w-1/2">Descargar CV</button>
             </div>
         </motion.div>
     )
