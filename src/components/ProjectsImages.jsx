@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const ProjectsImages = () => {
     return (
-        <div className='flex lg:justify-around lg:items-start flex-col lg:flex-row items-center lg:text-2xl text-xl overflow-hidden gap-10'>
+        <motion.div className='flex lg:justify-around lg:items-start flex-col lg:flex-row items-center lg:text-2xl text-xl overflow-hidden gap-10'>
             <motion.div 
             className='flex flex-col justify-center items-center mt-10 gap-5 lg:w-1/4 w-5/6 '
             whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}
@@ -68,7 +68,7 @@ const ProjectsImages = () => {
                     <p className='w-fit'>Proyecto de simulación de una tienda online de bebidas de todo tipo. La plataforma ofrece funciones como registro de usuarios, navegación intuitiva por el catálogo de productos, carrito de compras y un proceso de checkout seguro con pasarela de pagos.</p>
                 </a>
             </motion.div>
-        </div>
+        </motion.div>
     )
 }
 
