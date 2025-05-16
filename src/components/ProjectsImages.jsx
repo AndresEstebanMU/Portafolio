@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 const ProjectsImages = () => {
     return (
-        <motion.div className='flex lg:justify-around lg:items-start flex-col lg:flex-row items-center lg:text-2xl text-xl  gap-10 pb-6'>
-            <motion.div 
-            className='flex flex-col justify-center items-center mt-10  lg:w-1/4 w-5/6 '
-            whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}
+        <motion.div className='flex lg:justify-around lg:items-start flex-col lg:flex-row items-center lg:text-2xl text-xl  gap-10 pb-28'>
+            <motion.div
+                className='flex flex-col justify-center items-center mt-10  lg:w-1/4 w-5/6 '
+                whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} style={{ transformStyle: 'preserve-3d' }}
             >
                 <a
                     className='text-center'
@@ -29,8 +29,8 @@ const ProjectsImages = () => {
             </motion.div>
             
             <motion.div
-                className='flex flex-col justify-center items-center mt-10  lg:w-1/4 w-5/6  '
-                whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}
+                className='flex flex-col justify-center items-center mt-10 lg:w-1/4 w-5/6  '
+                whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} style={{ transformStyle: 'preserve-3d' }}
             >
                 <a
                     className='text-center'
@@ -48,13 +48,13 @@ const ProjectsImages = () => {
                     <p > Proyecto de visualización de gráficos de películas y series en emisión, utilizando la API de The Movie Database (TMDb). Las calificaciones de cada obra corresponden al promedio de puntuaciones otorgadas por los espectadores.</p>
                 </a>
             </motion.div>
-            <motion.div 
-            className='flex flex-col justify-center items-center mt-10   lg:w-1/4 w-5/6 '
-            whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}
+            <motion.div
+                className='flex flex-col justify-center items-center mt-10   lg:w-1/4 w-5/6 '
+                whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} style={{ transformStyle: 'preserve-3d' }}
             >
-                <a 
-                className='text-center '
-                href='https://roaring-tulumba-ba31a3.netlify.app/'>
+                <a
+                    className='text-center '
+                    href='https://roaring-tulumba-ba31a3.netlify.app/'>
                     <Image
                         className='rounded-xl w-full h-auto '
                         src="/botika.png"
@@ -62,8 +62,8 @@ const ProjectsImages = () => {
                         width={400}
                         height={400}
                         priority={true}
-                    />   
-                    
+                    />
+
                     <p>E-Commerce</p>
                     <p >Proyecto de simulación de una tienda online de bebidas de todo tipo. La plataforma ofrece funciones como registro de usuarios, navegación intuitiva por el catálogo de productos, carrito de compras y un proceso de checkout seguro con pasarela de pagos.</p>
                 </a>
