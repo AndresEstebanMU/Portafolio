@@ -1,6 +1,9 @@
 'use client'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import ventures from '/src/assets/ventures.webp'
+import grafico from '/src/assets/Pagina-grafico-peliculas.webp'
+import botika from '/src/assets/botika.webp'
 
 const ProjectsImages = () => {
     return (
@@ -14,8 +17,8 @@ const ProjectsImages = () => {
                     href='https://master--voluble-boba-d82bef.netlify.app/'>
                     <Image
                         className='rounded-xl w-full h-auto '
-                        src="/ventures.png"
-                        alt="pagina la botika"
+                        src={ventures}
+                        alt="restaurante"
                         width={400}
                         height={400}
                         priority={true}
@@ -37,8 +40,8 @@ const ProjectsImages = () => {
                     href='https://andresestebanmu.github.io/Proyecto3-Grafico/'>
                     <Image
                         className='rounded-xl w-full h-auto '
-                        src="/Pagina-grafico-peliculas.png"
-                        alt="pagina la botika"
+                        src={grafico}
+                        alt="Gráficos"
                         width={400}
                         height={400}
                         priority={true}
@@ -57,7 +60,7 @@ const ProjectsImages = () => {
                     href='https://roaring-tulumba-ba31a3.netlify.app/'>
                     <Image
                         className='rounded-xl w-full h-auto '
-                        src="/botika.png"
+                        src={botika}
                         alt="pagina la botika"
                         width={400}
                         height={400}
