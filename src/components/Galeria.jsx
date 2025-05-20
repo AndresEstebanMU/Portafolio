@@ -28,7 +28,7 @@ const Galeria = () => {
       };
 
   return (
-    <div className="ml-0  2xl:ml-80 xl:ml-52 lg:ml-0 md:ml-10  ">
+    <div className="ml-0  2xl:ml-80 xl:ml-52 lg:ml-0 md:ml-10 overflow-hidden ">
         <motion.div
          
          variants={container}
