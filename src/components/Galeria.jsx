@@ -8,11 +8,12 @@ import { motion } from 'framer-motion';
 const Galeria = () => {
 
     const container = {
-        hidden: { opacity: 1, scale: 0 },
+        hidden: { opacity: 0, scale: 0.95 },
         visible: {
           opacity: 1,
           scale: 1,
           transition: {
+            delay: 0.1,
             delayChildren: 0.3,
             staggerChildren: 0.2
           }
@@ -33,8 +34,10 @@ const Galeria = () => {
          
          variants={container}
          initial="hidden"
-         animate="visible"
-        className="flex md:flex-row flex-col text-5xl md:text-6xl container border-2 border-gray-900  rounded-xl ">
+         whileInView="visible"
+        className="flex md:flex-row flex-col text-5xl md:text-6xl container border-2 border-gray-900  rounded-xl "
+        
+        >
             <div className="flex flex-row md:flex-col">
                 <motion.div className="text-orange-500 item m-1 md:m-5" variants={item}><IoLogoHtml5 /></motion.div>
                 <motion.div className="text-blue-300 item m-1 md:m-5" variants={item}><IoLogoCss3 /></motion.div>
@@ -43,13 +46,13 @@ const Galeria = () => {
                 <motion.div className="text-yellow-400 item m-1 md:m-5" variants={item}><IoLogoJavascript /></motion.div>
                 <motion.div className="text-green-500 item m-1 md:m-5" variants={item}><DiNodejs /></motion.div>
             </div>
-            <div className="flex flex-row md:flex-col">
+            <div className="flex flex-row md:flex-col ">
                 
                 <motion.div className="text-blue-200 item m-1 md:m-5" variants={item}><FaReact /></motion.div>
                 <motion.div className="text-yellow-500 item m-1 md:m-5" variants={item}><SiVite /></motion.div>
                 <motion.div className="text-white item m-1 md:m-5" variants={item}><SiNextdotjs /></motion.div>
                 <motion.div className="text-blue-200  item m-1 md:m-5" variants={item}><SiTailwindcss /></motion.div>
-                <motion.div className="text-xs flex items-end item m-1 md:m-5" variants={item}>Express <FaJsSquare className="text-yellow-400" /></motion.div>
+                <motion.div className="text-sm flex justify-center items-end item m-1 md:mx-5 md:my-4 md:mb-16 mr-1 relative md:top-6 bottom-4 md:left-0 left-0.5" variants={item}>Express <FaJsSquare className="text-yellow-400 " /></motion.div>
                 <motion.div className="text-green-500 item m-1 md:m-5" variants={item}><SiMongodb /></motion.div>
             </div>
         </motion.div>
