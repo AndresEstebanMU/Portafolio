@@ -1,34 +1,33 @@
 'use client'
 
 
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenuItem, NavbarMenuToggle, NavbarMenu} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuItem, NavbarMenuToggle, NavbarMenu} from "@nextui-org/react";
 import Link from "next/link";
 // import {AcmeLogo} from "./AcmeLogo.jsx";
-import React from 'react';
 import { Bebas_Neue } from 'next/font/google';
+import { useState } from "react";
 
 
 const bebas = Bebas_Neue({  weight: '400', subsets: ['latin'] });
 
 // agregar classname
 
+
 const NavBar = () => {
 
   
-  /*const menuItems = [
-    "Home",
-    "Acerca de mí",
-    "Proyectos",
-    "Contacto",
-  ];*/
 
   
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <Navbar isBordered className="bg-red-900 static" >
-      <NavbarContent className="sm:hidden" justify="start">
-        <NavbarMenuToggle />
+    <Navbar isBordered className="bg-red-900 static" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent className="sm:hidden " justify="start" >
+        <NavbarMenuToggle
+        
+        
+         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+         />
       </NavbarContent>
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
@@ -72,14 +71,18 @@ const NavBar = () => {
         </NavbarItem>
       </NavbarContent> */}
 
-      <NavbarMenu className="w-fit" >
+      <NavbarMenu 
+        className="w-fit overflow-hidden" 
+        onMouseLeave={() => setIsMenuOpen(false)}
+      >
         {/* {menuItems.map((item, index) => ( */}
-          <NavbarMenuItem className={bebas.className}>
+          <NavbarMenuItem  className={bebas.className}>
             <Link
               className="w-full text-xl"
               color="white"
               href="/"
               size="lg"
+              
             >
               Home
             </Link>
