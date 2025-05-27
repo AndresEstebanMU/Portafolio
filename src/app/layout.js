@@ -18,15 +18,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
       <body className={`${generalFont.className} grid grid-rows-[auto_1fr_auto] min-h-screen overflow-auto`} >
-       
+       <NavBar />
           <Providers >
-            <NavBar />
+            
           
             {children}
             
-            <Footer />
+            
           </Providers>
-          
+          <Footer />
           {/*chiledren es la página en si, es el body */}
 
           
