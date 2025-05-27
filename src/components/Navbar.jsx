@@ -1,11 +1,13 @@
 'use client'
 
 
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuItem, NavbarMenuToggle, NavbarMenu} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuItem, NavbarMenuToggle, NavbarMenu, Tooltip} from "@nextui-org/react";
 import Link from "next/link";
 // import {AcmeLogo} from "./AcmeLogo.jsx";
 import { Bebas_Neue } from 'next/font/google';
-import { useState } from "react";
+import { useEffect, /* useState, */ useRef } from "react";
+/* import { usePathname } from "next/navigation";  */
+
 
 
 const bebas = Bebas_Neue({  weight: '400', subsets: ['latin'] });
@@ -15,25 +17,61 @@ const bebas = Bebas_Neue({  weight: '400', subsets: ['latin'] });
 
 const NavBar = () => {
 
-  
+ /*  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  console.log(isMenuOpen)
+  const pathname = usePathname();
+  const hasInteracted = useRef(false);
+
+  // Cierra el menú solo después de la primera interacción con el toggle
+  useEffect(() => {
+    if (!hasInteracted.current) return;
+    setIsMenuOpen(false);
+  }, [pathname]);
+
+  const handleToggle = () => {
+    hasInteracted.current = true;
+    setIsMenuOpen(prev => !prev);
+  };
+
+  const handleCloseMenu = () => {
+    setIsMenuOpen(false);
+  }; */
+
+ 
 
   
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const renderCount = useRef(0);
+  
+  renderCount.current += 1;
+  
+  useEffect(() => {
+    console.log(`El componente Nav se ha renderizado ${renderCount.current} veces`);
+  });
+  
+  
+
 
   return (
-    <Navbar isBordered className="bg-red-900 static" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+    <Navbar isBordered className="bg-red-900 static" /* isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} */ >
       <NavbarContent className="sm:hidden " justify="start" >
-        <NavbarMenuToggle
-        
-        
-         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-         />
+        <Tooltip 
+        className="text-gray-950"
+        content={"Abrir menú"}
+        delay={600}
+        >
+          <NavbarMenuToggle
+            /* onClick={handleToggle} */
+            /* aria-label={isMenuOpen ? "Close menu" : "Open menu"} */
+          />
+        </Tooltip>
       </NavbarContent>
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand className={bebas.className}>
           {/* <AcmeLogo /> */}
-          <Link href="/" className="font-bold text-2xl">Portafolio</Link>
+          <Link href="/" className="font-bold text-2xl"
+            /* onClick={handleCloseMenu} */
+          >Portafolio</Link>
         </NavbarBrand>
       </NavbarContent>
 
@@ -73,8 +111,10 @@ const NavBar = () => {
 
       <NavbarMenu 
         className="w-fit overflow-hidden" 
-        onMouseLeave={() => setIsMenuOpen(false)}
+        
+        /* key={pathname} */
       >
+        
         {/* {menuItems.map((item, index) => ( */}
           <NavbarMenuItem  className={bebas.className}>
             <Link
@@ -82,7 +122,7 @@ const NavBar = () => {
               color="white"
               href="/"
               size="lg"
-              
+              /* onClick={handleCloseMenu} */
             >
               Home
             </Link>
@@ -94,6 +134,7 @@ const NavBar = () => {
               color="white"
               href="/projects"
               size="lg"
+              /* onClick={handleCloseMenu} */
             >
               Projectos
             </Link>
@@ -105,6 +146,7 @@ const NavBar = () => {
               color="white"
               href="/about"
               size="lg"
+              /* onClick={handleCloseMenu} */
             >
               Acerca de mí
             </Link>
@@ -116,6 +158,7 @@ const NavBar = () => {
               color="white"
               href="/contact"
               size="lg"
+              /* onClick={handleCloseMenu} */
             >
               Contacto
             </Link>

@@ -4,15 +4,28 @@ import Image from 'next/image';
 import ventures from '/src/assets/ventures.webp'
 import grafico from '/src/assets/Pagina-grafico-peliculas.webp'
 import botika from '/src/assets/botika.webp'
+/* import { TbComponentsOff } from 'react-icons/tb'; */
+import { useRef, useEffect } from 'react'; 
 
 const ProjectsImages = () => {
+
+      const renderCount = useRef(0);
+      
+      renderCount.current += 1;
+      
+      useEffect(() => {
+        console.log(`El componente projects se ha renderizado ${renderCount.current} veces`);
+      });
+
     return (
-        <motion.div className='flex lg:justify-around lg:items-start flex-col lg:flex-row items-center lg:text-2xl text-xl  gap-10 pb-28'>
+        <div className='flex lg:justify-around lg:items-start flex-col lg:flex-row items-center lg:text-2xl text-xl  gap-10 pb-28'>
             <motion.div
                 className='flex flex-col justify-center items-center mt-10  lg:w-1/4 w-5/6 '
                 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} style={{ transformStyle: 'preserve-3d' }}
             >
                 <a
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className='text-center'
                     href='https://master--voluble-boba-d82bef.netlify.app/'>
                     <Image
@@ -36,6 +49,8 @@ const ProjectsImages = () => {
                 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} style={{ transformStyle: 'preserve-3d' }}
             >
                 <a
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className='text-center'
                     href='https://andresestebanmu.github.io/Proyecto3-Grafico/'>
                     <Image
@@ -56,6 +71,8 @@ const ProjectsImages = () => {
                 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} style={{ transformStyle: 'preserve-3d' }}
             >
                 <a
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className='text-center '
                     href='https://roaring-tulumba-ba31a3.netlify.app/'>
                     <Image
@@ -71,9 +88,8 @@ const ProjectsImages = () => {
                     <p >Proyecto de simulación de una tienda online de bebidas de todo tipo. La plataforma ofrece funciones como registro de usuarios, navegación intuitiva por el catálogo de productos, carrito de compras y un proceso de checkout seguro con pasarela de pagos.</p>
                 </a>
             </motion.div>
-        </motion.div>
+        </div>
     )
 }
 
 export default ProjectsImages
-
