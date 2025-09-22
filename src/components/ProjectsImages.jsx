@@ -5,17 +5,8 @@ import ventures from '/src/assets/ventures.webp'
 import grafico from '/src/assets/Pagina-grafico-peliculas.webp'
 import botika from '/src/assets/botika.webp'
 /* import { TbComponentsOff } from 'react-icons/tb'; */
-import { useRef, useEffect } from 'react'; 
 
 const ProjectsImages = () => {
-
-      const renderCount = useRef(0);
-      
-      renderCount.current += 1;
-      
-      useEffect(() => {
-        console.log(`El componente projects se ha renderizado ${renderCount.current} veces`);
-      });
 
     return (
         <div className='flex lg:justify-around lg:items-start flex-col lg:flex-row items-center lg:text-2xl text-xl  gap-10 pb-28'>

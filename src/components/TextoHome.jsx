@@ -25,10 +25,10 @@ const TextoHome = () => {
         >
             <div className="flex flex-col gap-5 items-center  text-center text-xl md:text-3xl  text-white ">
                 <Image
-                src="/IMG_20241023_172352.jpg"
+                src="/IMG_20250922_180734408-redonda.jpg"
                 alt="Mi imagen"
-                width={100}
-                className='rounded-full w-auto h-auto'
+                width={200}
+                className='rounded-full w-auto h-auto '
                 height={0}
                 
                 priority={true}
