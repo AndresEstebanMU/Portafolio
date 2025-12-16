@@ -1,9 +1,9 @@
 'use client'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import ventures from '/src/assets/ventures.webp'
-import grafico from '/src/assets/Pagina-grafico-peliculas.webp'
-import botika from '/src/assets/botika.webp'
+import ventures from '../assets/ventures.webp'
+import grafico from '../assets/Pagina-grafico-peliculas.webp'
+import botika from '../assets/botika.webp'
 /* import { TbComponentsOff } from 'react-icons/tb'; */
 
 const ProjectsImages = () => {
