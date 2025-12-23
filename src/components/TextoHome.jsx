@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const TextoHome = () => {
     const handleDescargar = () => {
-        const url = '/Curriculum-2025-C.pdf'; // Ruta al archivo en el directorio public
+        const url = '/Curriculum Andrés Muñoz Urrutia 2025.pdf'; // Ruta al archivo en el directorio public
         window.open(url);
       };
     
